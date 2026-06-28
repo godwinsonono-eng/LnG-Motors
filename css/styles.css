@@ -51,3 +51,24 @@ body {
 .tracking-wider {
     letter-spacing: 1.5px;
 }
+
+/* Optimized Hero Banner Scaling Structure */
+.hero-section {
+    /* 1. Sets a dark protective overlay and points to your local image folder */
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                url('../images/hero-bg.jpg') no-repeat;
+    
+    /* 2. Fixes the zoom: contains the image beautifully within the viewport */
+    background-size: cover;
+    background-position: center 25%; /* Adjusts vertical alignment to focus on the car body */
+    background-attachment: scroll;
+    
+    /* 3. Explicit height controls to prevent horizontal viewport stretching */
+    width: 100%;
+    min-height: 80vh; /* Takes up 80% of the screen height perfectly */
+    
+    /* 4. Flex centering layout content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
